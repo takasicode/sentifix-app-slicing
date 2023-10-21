@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Sign In - Sentifix App</title>
+    <title>Sign Up - Sentifix App</title>
 
     <meta name="author" content="Team Sentifix" />
     <meta name="description" content="BTNG Feedback Sentiment Analysis" />
@@ -64,10 +64,28 @@
                 <div class="card mb-3">
                   <div class="card-body">
                     <div class="pt-4 pb-2">
-                      <h5 class="card-title text-center pb-0 fs-4">Sign In</h5>
+                      <h5 class="card-title text-center pb-0 fs-4">Sign Up</h5>
                     </div>
 
                     <form class="row g-3 needs-validation" novalidate>
+                      <div class="col-12">
+                        <label for="yourName" class="form-label"
+                          >Full Name</label
+                        >
+                        <div class="input-group has-validation">
+                          <input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            id="yourName"
+                            required
+                          />
+                          <div class="invalid-feedback">
+                            Please enter your name.
+                          </div>
+                        </div>
+                      </div>
+
                       <div class="col-12">
                         <label for="yourEmail" class="form-label"
                           >Email Address</label
@@ -155,9 +173,9 @@
                       <div class="col-12">
                         <button class="btn btn-dark rounded-pill w-100">
                           <a
-                            href="register.html"
+                            href="index.html"
                             style="text-decoration: none; color: white"
-                            >Create New Account</a
+                            >Sign Up</a
                           >
                         </button>
                       </div>
